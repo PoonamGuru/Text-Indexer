@@ -1,0 +1,45 @@
+#if 0
+114     /*--------------------------------------------------------CASE 3 :   Same first letter but different word ------------------------------------    -*/
+115 
+116 
+117 
+118     else if(db_ary[indx].word[0] == token[0] ) //&& strcmp(db_ary[indx].tab_link->file_name,flist[i]) == 0)
+119     {
+120 
+121         puts("entered to case 3");
+122         Slist * node = create_same_frst_letter_node();
+123         if(node != NULL)
+124         {
+125             node->file_count += 1;
+126             node->word = token;
+127             if(node->file_table == NULL)
+128             {
+129                 if((node->file_table = create_sll()) != NULL)
+130                 {
+131                     node->file_table->word_count += 1;
+132                     node->file_table->file_name = flist[i];
+133                 }
+134 
+135                 db_ary[indx].link = node;
+136             }
+137         }
+138 
+139 
+140     }
+141 
+142 
+143 #endif
+144 #if 0
+43 #endif
+144 #if 0
+145     for(int i =0; i < SIZE;i++)
+146     {
+147         printf("%d\t %d\t%s\t%p\t%p\n", db_ary[i].index,
+148                 db_ary[i].file_count,
+149                 db_ary[i].word,
+150                 db_ary[i].link,
+151                 db_ary[i].tab_link);
+152     }
+153 
+154 #endif
+
